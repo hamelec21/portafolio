@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+
+  <meta
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    name="viewport"
+  />
+
+  <title>Juan Ramon Cornejo</title>
+
+  <meta property="og:title" content="Juan Ramon Cornejo" />
+
+  <meta property="og:locale" content="Es-es" />
+
+  <link
+    rel="canonical"
+    href="//"
+  />
+
+  <meta
+    property="og:url"
+    content="//"
+  />
+
+  <meta
+    name="description"
+    content="Desarrollador Full Stack , 11 años de experiencia y solidos conocimientos en el desarrollo  Web  y Software. Analista Programador."
+  />
+
+  <meta name="keywords" 
+  content="Desarrollador Full Stack , desarrollo  Web  , Software,Analista Programador,Informática Educativa,Diseño Web,Framework Laravel,Programación PHP,MYSQL,Framework de CSS,bootstrap,tailwind,App,desarrollador,programador 
+  , catemu, san felipe, los andes, juan ramon cornejo, paginas web, tienda online,aconcagua,quinta region,informatica educativa, chile,santiago
+   "/>
+
+
+
+
+
+
+  <link rel="icon" type="image/png" href="/assets/img/favicon.png" />
+
+  <meta name="theme-color" content="#5540af" />
+
+  <meta property="og:site_name" content="Juan ramon cornejo" />
+
+  <meta property="og:image" content="" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <meta name="twitter:site" content="@juanracornejo" />
+
+  <link
+    crossorigin="crossorigin"
+    href="https://fonts.gstatic.com"
+    rel="preconnect"
+  />
+
+  <link
+    as="style"
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@400;500;600;700&display=swap"
+    rel="preload"
+  />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link
+    href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+    rel="stylesheet"
+  />
+
+  <link
+    crossorigin="anonymous"
+    href="/assets/styles/main.min.css"
+    media="screen"
+    rel="stylesheet"
+  />
+
+
+  
+  <script
+    defer
+    src="https://unpkg.com/@alpine-collective/toolkit@1.0.0/dist/cdn.min.js"
+  ></script>
+
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+  
+</head>
+
+
+  <body
+    :class="{ 'overflow-hidden max-h-screen': mobileMenu }"
+    class="relative "
+    x-data="{ mobileMenu: false }" 
+  >
+    
+    <div id="main" class="relative">
+      <div
+  x-data="{
+    triggerNavItem(id) {
+        $scroll(id)
+    },
+    triggerMobileNavItem(id) {
+        mobileMenu = false;
+        this.triggerNavItem(id)
+    }
+}"
+>
+  <div class="w-full z-50 top-0 py-3 sm:py-5  absolute
+">
+  <div class="container flex items-center justify-between">
+    <div>
+      <a href="/">
+        <img src="/assets/img/jr_logo.svg" class="w-24 lg:w-48" alt="logo image" />
+      </a>
+    </div>
+    <div class="hidden lg:block">
+      <ul class="flex items-center">
+        
+        <li class="group pl-6">
+          
+          <span
+            @click="triggerNavItem('#about')"
+            class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
+            >Sobre Mi</span
+          >
+          
+          <span
+            class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
+          ></span>
+        </li>
+        
+        <li class="group pl-6">
+          
+          <span
+            @click="triggerNavItem('#services')"
+            class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
+            >Servicios</span
+          >
+          
+          <span
+            class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
+          ></span>
+        </li>
+        
+        <li class="group pl-6">
+          
+          <span
+            @click="triggerNavItem('#portfolio')"
+            class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
+            >Portfolio</span
+          >
+          
+          <span
+            class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
+          ></span>
+        </li>
+        
+        <li class="group pl-6">
+          
+          <span
+            @click="triggerNavItem('#clients')"
+            class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
+            >Clientes</span
+          >
+          
+          <span
+            class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
+          ></span>
+        </li>
+        
+        
+
+        <!--boton cv-->
+
+        <li class="group pl-6 ">
+          <span
+            class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white btn-cv">
+          <a href="assets/cv/cv_juanramoncornejo.pdf" target="_blank">Descargar Cv</a></span>
+          <span
+            class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
+          ></span>
+      
+        </li>
+         <!--boton cv-->
+        
+        <li class="group pl-6">
+          
+          <span
+            @click="triggerNavItem('#contact')"
+            class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
+            >Contacto</span
+          >
+          
+          <span
+            class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
+          ></span>
+        </li>
+        
+      </ul>
+    </div>
+    <div class="block lg:hidden">
+      <button @click="mobileMenu = true">
+        <i class="bx bx-menu text-4xl text-white"></i>
+      </button>
+    </div>
+  </div>
+</div>
+
+<div
+  class="pointer-events-none fixed inset-0 z-70 min-h-screen bg-black bg-opacity-70 opacity-0 transition-opacity lg:hidden"
+  :class="{ 'opacity-100 pointer-events-auto': mobileMenu }"
+>
+  <div
+    class="absolute right-0 min-h-screen w-2/3 bg-primary py-4 px-8 shadow md:w-1/3"
+  >
+    <button
+      class="absolute top-0 right-0 mt-4 mr-4"
+      @click="mobileMenu = false"
+    >
+      <img src="/assets/img/icon-close.svg" class="h-10 w-auto" alt="" />
+    </button>
+
+    <ul class="mt-8 flex flex-col">
+      
+      <li class="py-2">
+        
+        <span
+          @click="triggerMobileNavItem('#about')"
+          class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
+          >Sobre Mi</span
+        >
+        
+      </li>
+      
+      <li class="py-2">
+        
+        <span
+          @click="triggerMobileNavItem('#services')"
+          class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
+          >Servicios</span
+        >
+        
+      </li>
+      
+      <li class="py-2">
+        
+        <span
+          @click="triggerMobileNavItem('#portfolio')"
+          class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
+          >Portfolio</span
+        >
+        
+      </li>
+      
+      <li class="py-2">
+        
+        <span
+          @click="triggerMobileNavItem('#clients')"
+          class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
+          >Clientes</span
+        >
+        
+      </li>
+      
+      <li class=" py2 ">
+        <span
+          class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white btn-cv">
+        <a href="assets/cv/cv_juanramoncornejo.pdf" target="_blank">Descargar Cv</a></span>
+        <span
+          class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
+        ></span>
+    
+      </li>
+
+      <li class="py-2">
+        
+        <span
+          @click="triggerMobileNavItem('#contact')"
+          class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
+          >Contacto</span
+        >
+        
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+      <div><div
+  class="relative bg-cover bg-center bg-no-repeat py-8"
+  style="background-image: url(/assets/img/bg_3.jpg)"
+>
+  <div
+    class="absolute inset-0 z-20 bg-gradient-to-r from-hero-gradient-from to-hero-gradient-to bg-cover bg-center bg-no-repeat"
+  ></div>
+
+  <div
+    class="container relative z-30 pt-20 pb-12 sm:pt-56 sm:pb-48 lg:pt-64 lg:pb-48"
+  >
+    <div class="flex flex-col items-center justify-center lg:flex-row">
+      <div class="rounded-full border-8 border-primary shadow-xl">
+        <img
+          src="/assets/img/user-1.jpg"
+          class="h-48 rounded-full sm:h-56"
+          alt="author"
+        />
+      </div>
+      <div class="pt-8 sm:pt-10 lg:pl-8 lg:pt-0">
+        <h1
+          class="text-center font-header text-4xl text-white sm:text-left sm:text-5xl md:text-6xl"
+        >
+          Hola Soy Juan Ramon Cornejo!
+        </h1>
+        <div
+          class="flex flex-col justify-center pt-3 sm:flex-row sm:pt-5 lg:justify-start"
+        >
+          <div
+            class="flex items-center justify-center pl-0 sm:justify-start md:pl-1"
+          >
+            <p class="font-body text-lg uppercase text-white">CONECTATE CONMIGO</p>
+            <div class="hidden sm:block">
+              <i class="bx bx-chevron-right text-3xl text-yellow"></i>
+            </div>
+          </div>
+          <div
+            class="flex items-center justify-center pt-5 pl-2 sm:justify-start sm:pt-0"
+          >
+            
+            <a href="https://twitter.com/juanramoncornej" class="pl-4">
+              <i
+                class="bx bxl-twitter text-2xl text-white hover:text-yellow"
+              ></i>
+            </a>
+            
+            <a href="https://www.linkedin.com/in/juan-ram%C3%B3n-cornejo-30062134/" class="pl-4">
+              <i
+                class="bx bxl-linkedin text-2xl text-white hover:text-yellow"
+              ></i>
+            </a>
+            <a href="https://www.instagram.com/juanracornejo/" class="pl-4">
+              <i
+                class="bx bxl-instagram text-2xl text-white hover:text-yellow"
+              ></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="bg-grey-50" id="about">
+  <div class="container flex flex-col items-center py-16 md:py-20 lg:flex-row">
+    <div class="w-full text-center sm:w-3/4 lg:w-3/5 lg:text-left">
+      <h2 class="font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl">
+       Quién Soy?
+      </h2>
+      
+      <p class="pt-6 font-body  text-grey-20 p1">
+        Desarrollador Full Stack , 11 años de experiencia y solidos conocimientos en el desarrollo  Web  y Software. Analista Programador, Diplomado en Comunicaciones y Evaluación Docente, Diplomado en Informática Educativa. 
+        <br><br>
+        Me inicie en la docencia ejerciendo en el Colegio Salesianos, don Bosco, impartiendo clases de informática y talleres sobre Diseño  Web.
+        <br><br>
+      
+        Luego continúe mi camino profesional en la Institución Educacional Centro de Formación Técnica (CFT ) Laplace y  la Fundación de Universidad de Playa Ancha 
+        , con el Desarrollo de Plataformas de Gestión Académica,  Framework  Laravel y Base de Datos MYSQL.
+        <br><br>
+        Posteriormente, para el  Área de Fomento Productivo de la Ilustre Municipalidad de Los Andes , 
+        desarrolle Plataforma  de Catálogo online para los emprendedores de esa comuna, con el fin de dar conocer sus productos y servicios.
+        <br><br> 
+        Seguidamente en el Departamento de Educacional Municipal de Los Andes, 
+        estuve a cargo de la realización del Diseño y Desarrollo de Página Web   para el Liceo América, con lenguaje de Programación PHP y MYSQL También ocupando Framework de CSS .
+        <br><br>
+        Actualmente, me dedico al Desarrollo de Software, Diseño web y APP ,Trabajo como Developer Full Stack independiente, aplicando  nuevas tecnologías para el desarrollo de productos finales.
+      </p>
+      <div
+        class="flex flex-col justify-center pt-6 sm:flex-row lg:justify-start"
+      >
+        <div class="flex items-center justify-center sm:justify-start">
+          <p class="font-body text-lg font-semibold uppercase text-grey-20">
+            CONECTATE CONMIGO
+          </p>
+          <div class="hidden sm:block">
+            <i class="bx bx-chevron-right text-2xl text-primary"></i>
+          </div>
+        </div>
+        <div
+          class="flex items-center justify-center pt-5 pl-2 sm:justify-start sm:pt-0"
+        >
+          
+          <a href="https://twitter.com/juanramoncornej" class="pl-4" target="_blank" >
+            <i
+              class="bx bxl-twitter text-2xl text-primary hover:text-yellow"
+            ></i>
+          </a>
+          
+          <a href="https://www.linkedin.com/in/juan-ram%C3%B3n-cornejo-30062134/" class="pl-4" target="_blank" >
+            <i
+              class="bx bxl-linkedin text-2xl text-primary hover:text-yellow"
+            ></i>
+          </a>
+          <a href="https://www.instagram.com/juanracornejo/" class="pl-4" target="_blank">
+            <i
+              class="bx bxl-instagram text-2xl text-primary hover:text-yellow"
+            ></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <!--Logos herramientas de trabajso-->    
+
+    <div class="w-full pl-0 pt-10 sm:w-3/4 lg:w-2/5 lg:pl-12 lg:pt-0">
+      <!--Segunda Linea de Logos -->
+
+      <div class="flex ">
+        <div class="rounded-logo mr-3 rounded-full   border-2 border-logo shadow-xl">
+          <img src="/assets/img/logos/logo_html.png" class="h-32 rounded-full sm:h-32" alt="htm5"/>
+        </div>
+
+        <div class="rounded-logo mr-3 rounded-full   border-2 border-logo shadow-xl">
+          <img src="/assets/img/logos/logo_js.png" class="h-32 rounded-full sm:h-32" alt="js"/>
+        </div>
+
+        <div class="rounded-logo mr-3 rounded-full   border-2 border-logo shadow-xl">
+          <img src="/assets/img/logos/logo_bootstrap.png" class="h-32 rounded-full sm:h-32" alt="bootstrap"/>
+        </div>
+
+        <div class="rounded-logo mr-3 rounded-full   border-2 border-logo shadow-xl">
+          <img src="/assets/img/logos/logo_tailwind.png" class="h-32 rounded-full sm:h-32" alt="tailwind css"/>
+        </div>
+
+        <div class="rounded-logo mr-3 rounded-full   border-2 border-logo shadow-xl">
+          <img src="/assets/img/logos/logo_laravel1.png" class="h-32 rounded-full sm:h-32" alt="laravel"/>
+        </div>
+
+        <div class="rounded-logo mr-3 rounded-full   border-2 border-logo shadow-xl">
+          <img src="/assets/img/logos/logo_mysql.png" class="h-32 rounded-full sm:h-32" alt="mysql"/>
+        </div>
+
+        
+      </div>
+      <br>
+      <!--Segunda Linea de Logos -->
+      <div class="flex ">
+        <div class="rounded-logo mr-3 rounded-full   border-2 border-logo shadow-xl">
+          <img src="/assets/img/logos/logo_php.png" class="h-32 rounded-full sm:h-32" alt="Php"/>
+        </div>
+
+        <div class="rounded-logo mr-3 rounded-full   border-2 border-logo shadow-xl">
+          <img src="/assets/img/logos/logo_node.png" class="h-32 rounded-full sm:h-32" alt="node js"/>
+        </div>
+
+        <div class="rounded-logo mr-3 rounded-full   border-2 border-logo shadow-xl">
+          <img src="/assets/img/logos/logo_ionic.png" class="h-32 rounded-full sm:h-32" alt="ionic"/>
+        </div>
+
+        <div class="rounded-logo mr-3 rounded-full   border-2 border-logo shadow-xl">
+          <img src="/assets/img/logos/prestashop.png" class="h-32 rounded-full sm:h-32" alt="prestashop"/>
+        </div>
+        <div class="rounded-logo mr-3 rounded-full   border-2 border-logo shadow-xl">
+          <img src="/assets/img/logos/logo_wordpress.png" class="h-32 rounded-full sm:h-32" alt="wordpress"/>
+        </div>
+
+        <div class="rounded-logo mr-3 rounded-full   border-2 border-logo shadow-xl">
+          <img src="/assets/img/logos/logo_livewire.png" class="h-32 rounded-full sm:h-32" alt="livewire"/>
+        </div>
+      </div>
+
+      <br>
+
+      <!--Tercera Linea de Logos -->
+      <div class="flex ">
+        <div class="rounded-logo mr-3 rounded-full   border-2 border-logo shadow-xl">
+          <img src="/assets/img/logos/logo_firebase.png" class="h-32 rounded-full sm:h-32" alt="firefase"/>
+        </div>
+
+        <div class="rounded-logo mr-3 rounded-full   border-2 border-logo shadow-xl">
+          <img src="/assets/img/logos/logo_photoshop.png" class="h-32 rounded-full sm:h-32" alt="adobe photosop"/>
+        </div>
+
+        <div class="rounded-logo mr-3 rounded-full   border-2 border-logo shadow-xl">
+          <img src="/assets/img/logos/logo_ai.png" class="h-32 rounded-full sm:h-32" alt="adobe ai"/>
+        </div>
+
+        <div class="rounded-logo mr-3 rounded-full   border-2 border-logo shadow-xl">
+          <img src="/assets/img/logos/logo_xd.png" class="h-32 rounded-full sm:h-32" alt="adobe ae"/>
+        </div>
+        <div class="rounded-logo mr-3 rounded-full   border-2 border-logo shadow-xl">
+          <img src="/assets/img/logos/logo_pr.png" class="h-32 rounded-full sm:h-32" alt="adobe pr"/>
+        </div>
+
+        <div class="rounded-logo mr-3 rounded-full   border-2 border-logo shadow-xl">
+          <img src="/assets/img/logos/logo_git.png" class="h-32 rounded-full sm:h-32" alt="github"/>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+<div class="container py-16 md:py-20" id="services">
+  <h2
+    class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl"
+  >
+  Conoce Mis Servicios
+  </h2>
+  <h3
+    class="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl"
+  >
+    Trabajemos Juntos que Dices!
+  </h3>
+
+  <div
+    class="grid grid-cols-1 gap-6 pt-10 sm:grid-cols-2 md:gap-10 md:pt-12 lg:grid-cols-3"
+  >
+    <div class="group rounded px-8 py-12 shadow hover:bg-primary">
+      <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+        <div class="hidden group-hover:block">
+          <img
+            src="/assets/img/icon-development-white.svg"
+            alt="development icon"
+          />
+        </div>
+        <div class="block group-hover:hidden">
+          <img
+            src="/assets/img/icon-development-black.svg"
+            alt="development icon"
+          />
+        </div>
+      </div>
+      <div class="text-center">
+        <h3
+          class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl"
+        >
+          Desarrollo Web
+        </h3>
+        <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+          Tu Presencia en Internet.
+        </p>
+      </div>
+    </div>
+    <div class="group rounded px-8 py-12 shadow hover:bg-primary">
+      <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+        <div class="hidden group-hover:block">
+          <img
+            src="/assets/img/icon-seo-white.svg"
+            alt="content marketing icon"
+          />
+        </div>
+        <div class="block group-hover:hidden">
+          <img
+            src="/assets/img/icon-seo-black.svg"
+            alt="content marketing icon"
+          />
+        </div>
+      </div>
+      <div class="text-center">
+        <h3
+          class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl"
+        >
+          Posicionamiento Web
+        </h3>
+        <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+          Primeros Lugares de Google.
+        </p>
+      </div>
+    </div>
+    <div class="group rounded px-8 py-12 shadow hover:bg-primary">
+      <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+        <div class="hidden group-hover:block">
+          <img
+            src="/assets/img/icon-mobile-white.svg"
+            alt="Mobile Application icon"
+          />
+        </div>
+        <div class="block group-hover:hidden">
+          <img
+            src="/assets/img/icon-mobile-black.svg"
+            alt="Mobile Application icon"
+          />
+        </div>
+      </div>
+      <div class="text-center">
+        <h3
+          class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl"
+        >
+          Desarrollo App
+        </h3>
+        <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+         Un Mundo en tus Manos.
+        </p>
+      </div>
+    </div>
+    <div class="group rounded px-8 py-12 shadow hover:bg-primary">
+      <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+        <div class="hidden group-hover:block">
+          <img
+            src="/assets/img/icon-dsof-white.svg"
+            alt="Email Marketing icon"
+          />
+        </div>
+        <div class="block group-hover:hidden">
+          <img
+            src="/assets/img/icon-dsof-black.svg"
+            alt="Email Marketing icon"
+          />
+        </div>
+      </div>
+      <div class="text-center">
+        <h3
+          class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl"
+        >
+          Desarrollo Software
+        </h3>
+        <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+          Tranformas tu Sueño en Realidad
+        </p>
+      </div>
+    </div>
+    <div class="group rounded px-8 py-12 shadow hover:bg-primary">
+      <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+        <div class="hidden group-hover:block">
+          <img
+            src="/assets/img/icon-design-white.svg"
+            alt="Theme Design icon"
+          />
+        </div>
+        <div class="block group-hover:hidden">
+          <img
+            src="/assets/img/icon-design-black.svg"
+            alt="Theme Design icon"
+          />
+        </div>
+      </div>
+      <div class="text-center">
+        <h3
+          class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl"
+        >
+          Diseño UX/UI
+        </h3>
+        <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+          La experiencia e interfaz de usuario
+        </p>
+      </div>
+    </div>
+    <div class="group rounded px-8 py-12 shadow hover:bg-primary">
+      <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+        <div class="hidden group-hover:block">
+          <img
+            src="/assets/img/icon-graphics-white.svg"
+            alt="Graphic Design icon"
+          />
+        </div>
+        <div class="block group-hover:hidden">
+          <img
+            src="/assets/img/icon-graphics-black.svg"
+            alt="Graphic Design icon"
+          />
+        </div>
+      </div>
+      <div class="text-center">
+        <h3
+          class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl"
+        >
+          Diseño Web
+        </h3>
+        <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+          Diseños atractivos y modernos.
+        </p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<!--Inicio del Portfolio-->
+
+<div class="container py-16 md:py-20" id="portfolio">
+  <h2
+    class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl"
+  >
+    Mira Mi Portfolio 
+  </h2>
+  <h3
+    class="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl"
+  >
+  Esto es lo que he hecho 
+  </h3>
+
+  <div
+    class="mx-auto grid w-full grid-cols-1 gap-8 pt-12 sm:w-3/4 md:gap-10 lg:w-full lg:grid-cols-2"
+  >
+    <a
+      href="https://datasup.didakticos.cl/"
+      class="mx-auto transform transition-all hover:scale-105 md:mx-0"
+    >
+      <img
+        src="/assets/img/portfolio_datasup.jpg"
+        class="w-full shadow"
+        alt="portfolio image"
+      />
+    </a>
+    <a
+      href="https://www.andespacificcapital.cl/"
+      class="mx-auto transform transition-all hover:scale-105 md:mx-0"
+    >
+      <img
+        src="/assets/img/portfolio_apc.jpg"
+        class="w-full shadow"
+        alt="portfolio image"
+      />
+    </a>
+    
+    <a
+      href="https://www.analogtapes.cl/" target="_blank"
+      class="mx-auto transform transition-all hover:scale-105 md:mx-0" >
+      <img
+        src="/assets/img/portfolio_analog.jpg" class="w-full shadow" alt="portfolio image"/>
+    </a>
+
+
+    <a
+    href="http://www.fernandosilvacastellon.cl/" target="_blank"
+    class="mx-auto transform transition-all hover:scale-105 md:mx-0" >
+    <img
+      src="/assets/img/portfolio_liceo.jpg" class="w-full shadow" alt="portfolio image"/>
+  </a>
+
+
+  </div>
+</div>
+
+
+<!--Seccion Clientes-->
+
+<div class="bg-grey-50" id="clients">
+  <div class="container py-16 md:py-20">
+    <div class="mx-auto w-full sm:w-3/4 lg:w-full">
+      <h2
+        class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl"
+      >
+        Clientes
+      </h2>
+      <div class="flex flex-wrap items-center justify-center pt-4 sm:pt-4">
+        <span class="m-8 block">
+          <img
+            src="/assets/img/logo_clientes/logo_cft.png"
+            alt="client logo"
+            class="mx-auto block h-18 w-auto"
+          />
+        </span>
+        <span class="m-8 block">
+          <img
+            src="/assets/img/logo_clientes/logo_analog.png"
+            alt="client logo"
+            class="mx-auto block  h-18 w-auto" 
+          />
+        </span>
+
+        <span class="m-8 block">
+          <img
+            src="/assets/img/logo_clientes/logo_apc.png"
+            alt="client logo"
+            class="mx-auto block h-18 w-auto"
+          />
+        </span>
+
+        <span class="m-8 block">
+          <img
+            src="/assets/img/logo_clientes/logo_mla.png"
+            alt="client logo"
+            class="mx-auto block h-18 w-auto"
+          />
+        </span>
+
+        <span class="m-8 block">
+          <img
+          src="/assets/img/logo_clientes/logo_lch.png"
+            alt="client logo"
+            class="mx-auto block h-20 w-auto"
+          />
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--Seccion Cv-->
+
+
+
+<div class="bg-white" id="blog">
+  <div class="container py-16 md:py-20">
+    <h2
+      class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl"
+    >
+      Que Dicen Los Clientes
+    </h2>
+    
+    <div
+      class="mx-auto grid w-full grid-cols-1 gap-6 pt-12 sm:w-3/4 lg:w-full lg:grid-cols-3 xl:gap-10"
+    >
+      <div class="shadow">
+        <div
+          style="background-image: url(/assets/img/post-01.png)"
+          class="group relative h-72 bg-cover bg-center bg-no-repeat sm:h-84 lg:h-64 xl:h-72"
+        >
+          <span
+            class="absolute inset-0 block bg-gradient-to-b from-blog-gradient-from to-blog-gradient-to bg-cover bg-center bg-no-repeat opacity-10 transition-opacity group-hover:opacity-50"
+          ></span>
+          
+        </div>
+        <div class="bg-white py-6 px-5 xl:py-8">
+          <span class="block font-body text-lg font-semibold text-black centro"
+            >MARIA TERESA COMPARINI OLAVARRIA</span>
+            <span class="block font-body text-lg font-semibold text-black centro">Socia de Terrium</span
+          >
+          <span class="block pt-2 font-body text-grey-20 p1"
+            >Trabajar con Juan Ramón Cornejo para nosotros como Pyme de Alimentos fue tener un apoyo constante y rápido para resolver problemas en nuestra página web,., Su trabajo es responsable y muy profesional y competente..</span
+          >
+        </div>
+      </div>
+      <div class="shadow">
+        <div
+          style="background-image: url(/assets/img/post-02.png)"
+          class="group relative h-72 bg-cover bg-center bg-no-repeat sm:h-84 lg:h-64 xl:h-72"
+        >
+          <span
+            class="absolute inset-0 block bg-gradient-to-b from-blog-gradient-from to-blog-gradient-to bg-cover bg-center bg-no-repeat opacity-10 transition-opacity group-hover:opacity-50"
+          ></span>
+          
+        </div>
+        <div class="bg-white py-6 px-5 xl:py-8">
+          <span class="block font-body text-lg font-semibold text-black centro"
+            >FRANCO ALEXANDER NÚÑEZ AHUMADA</span
+          >
+          <span class="block font-body text-lg font-semibold text-black centro"
+            >Director Liceo Polivalente Fernando Silva Catellon</span
+          >
+          <span class="block pt-2 font-body text-grey-20 p1"
+            >Quiero entregar mi testimonio de la labor realizada por Juan Ramon Cornejo, quién diseño e implementó nuestro sitio web institucional. Destacamos el profesionalismo y la prontitud en la entrega del servicio de paginas web, absolutamente recomendables".</span
+          >
+        </div>
+      </div>
+      <div class="shadow">
+        <div
+          style="background-image: url(/assets/img/post-03.png)"
+          class="group relative h-72 bg-cover bg-center bg-no-repeat sm:h-84 lg:h-64 xl:h-72"
+        >
+          <span
+            class="absolute inset-0 block bg-gradient-to-b from-blog-gradient-from to-blog-gradient-to bg-cover bg-center bg-no-repeat opacity-10 transition-opacity group-hover:opacity-50"
+          ></span>
+          
+        </div>
+        <div class="bg-white py-6 px-5 xl:py-8">
+          <span class="block font-body text-lg font-semibold text-black centro"
+            >ANDRES ALBERTO ROMERO MARCHANT</span
+          >
+          <span class="block font-body text-lg font-semibold text-black centro"
+            >Director Ejecutivo CFT LAPLACE</span
+          >
+          <span class="block pt-2 font-body text-grey-20 p1 "
+            >La experiencia de trabajar con Juan Ramón Cornejo la califico de muy buena dada la confiabilidad de sus servicios y el alto compromiso con los requerimientos de sus clientes.</span
+          >
+        </div>
+      </div>
+      
+      
+    </div>
+  </div>
+</div>
+
+<div class="bg-grey-50  py-16 md:py-20" id="contact" >
+  <h2
+    class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl"
+  >
+     contacto
+  </h2>
+  <h4
+    class="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl"
+  >
+  ¿Tiene alguna pregunta?
+  </h4>
+  <div class="mx-auto w-full pt-5 text-center sm:w-2/3 lg:pt-6">
+    
+  </div>
+  <form method="post" action="enviar.php" class="mx-auto w-full pt-10 sm:w-3/4">
+    <div class="flex flex-col md:flex-row">
+      <input
+        class="mr-3 w-full rounded border-grey-50 px-4 py-3 font-body text-black md:w-1/2 lg:mr-5"
+        name="nombre"
+        placeholder="Nombre"
+        type="text"
+        id="name"
+        required
+      />
+      <input
+        class="mt-6 w-full rounded border-grey-50 px-4 py-3 font-body text-black md:mt-0 md:ml-3 md:w-1/2 lg:ml-5"
+        name="email"
+        placeholder="Email"
+        type="text"
+        id="email"
+        required
+      />
+    </div>
+    <textarea
+      class="mt-6 w-full rounded border-grey-50 px-4 py-3 font-body text-black md:mt-8"
+      name="mensaje"
+      placeholder="Mensaje"
+      id="message"
+      cols="30"
+      rows="10"
+      required
+    ></textarea>
+    <button
+      class="mt-6 flex items-center justify-center rounded bg-footer px-8 py-3 font-header text-lg font-bold uppercase text-white hover:bg-grey-20" type="submit">
+      Enviar
+      <i class="bx bx-chevron-right relative -right-2 text-3xl"></i>
+    </button>
+  </form>
+  
+</div>
+</div>
+</div>
+
+  <div class="bg-footer">
+  <div class="container flex flex-col justify-between py-6 sm:flex-row">
+    <p class="text-center font-body text-white md:text-left">
+      © Copyright 2022. Todo los Derechos Reservados  a juanracornejo.
+    </p>
+    <div class="flex items-center justify-center pt-5 sm:justify-start sm:pt-0">
+      
+     
+
+      <a href="https://twitter.com/juanramoncornej" class="pl-4">
+        <i
+          class="bx bxl-twitter text-2xl text-white hover:text-yellow"
+        ></i>
+      </a>
+      
+      <a href="https://www.linkedin.com/in/juan-ram%C3%B3n-cornejo-30062134/" class="pl-4">
+        <i
+          class="bx bxl-linkedin text-2xl text-white hover:text-yellow"
+        ></i>
+      </a>
+      <a href="https://www.instagram.com/juanracornejo/" class="pl-4">
+        <i
+          class="bx bxl-instagram text-2xl text-white hover:text-yellow"
+        ></i>
+      </a>
+    </div>
+  </div>
+</div>
+
+    </div>
+
+    <script src="/assets/js/main.js"></script>
+
+    
+  </body>
+</html>
